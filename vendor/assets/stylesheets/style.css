@@ -227,7 +227,7 @@ header {
     background-image: 0;
     background-image: 0;
     background-image: linear-gradient(top, #a8d651, #6c9a15);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#a8d651', endColorstr='#6c9a15', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a8d651', endColorstr='#6c9a15', GradientType=0);
     border-color: #8AB833 #6c9a15 #6c9a15 #8AB833;
     border-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.25);
 }
