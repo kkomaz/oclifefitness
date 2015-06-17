@@ -2572,8 +2572,8 @@ a, a:hover {
     border-bottom: none;
 }
 .blog .single-blog-meta {
-    border-top: 1px solid #e8eaeb;
-    border-bottom: 1px solid #e8eaeb;
+/*    border-top: 1px solid #e8eaeb;
+    border-bottom: 1px solid #e8eaeb;*/
     padding: 9px 0;
     zoom: 1;
     font-size: 14px;
