@@ -1,3 +1,16 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.col-md-7 {
+  .yelp {
+  text-align: center;
+  height: 20%;
+  width: 20%;
+  }
+}
+img.client-image {
+  border-radius: 100%;
+  height: 300px;
+  width: 250px;
+} 

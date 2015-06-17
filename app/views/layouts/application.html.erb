@@ -17,7 +17,7 @@
 
 <!-- preloader -->
 <div class="preloading">
-  <%= image_tag("fancy-loading.gif", class: "loading-gif") %>
+  <%= link_to image_tag("fancy-loading.gif", class: "loading-gif"), root_path %>
 </div>
 
 <div class="navbar-wrapper">
@@ -32,84 +32,18 @@
         <span class="icon-bar"></span>
       </button>
     <a class="navbar-brand" href="#">
-      <%= image_tag("logo.gif", size: "150x45", id: "logokhan") %>
+      <%= image_tag("logo2.gif", size: "150x45", id: "logokhan") %>
     </a>
   </div>
   <div class="collapse navbar-collapse" id="main-navbar">
     <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-              <li><a href="index-1.html">Home Default</a>
-              </li>
-              <li><a href="index-2.html">Home Services</a>
-              </li>
-              <li><a href="index-3.html">Home Showcase</a>
-              </li>
-          </ul>
-      </li>
-      
-      <li><a href="features.html">Features</a></li>
-      
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="services.html">Services</a>
-            </li>
-            <li><a href="pricing.html">Pricing</a>
-            </li>
-            <li><a href="gallery.html">Gallery</a>
-            </li>
-        </ul>
-      </li>
-      
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-            <li><a href="blog.html">Blog Page</a>
-            </li>
-            <li><a href="single-blog.html">Single Post</a>
-            </li>
-        </ul>
-      </li>
-      
-      <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-              <li><a href="portfolio.html">Portfolio Page</a>
-              </li>
-              <li><a href="single-portfolio.html">Single Project</a>
-              </li>
-          </ul>
-      </li>
-      
-      <li><a href="contact.html">Contact Us</a></li>
-      
-      <li class="">
-          <a data-toggle="modal" href="#signUpModal" class="">Sign Up</a>
-      </li>
-      <li class="dropdown">
-        <a href="" class="dropdown-toggle" data-toggle="dropdown">Sign In <b class="caret"></b></a>
-          <div class="dropdown-menu" style="padding: 15px;">
-            <form role="form" class="form-menu">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Username">
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password">
-              </div>
-              <div class="checkbox">
-                <label class="text-muted">
-                  <input type="checkbox">Remember me
-                </label>
-              </div>
-              <button type="submit" class="btn btn-block btn-purity">Submit</button>
-            </form>
-          </div>
-      </li>
+      <li><a href="features.html">ABOUT DANNY</a></li>
+      <li><a href="features.html">SERVICES</a></li>
+      <li><a href="features.html">TESTIMONIALS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>   
     </ul>
     </div>
-    </div>
+  </div>
   </nav>
 </div>
 <!--################ NAVIGATION END ################-->

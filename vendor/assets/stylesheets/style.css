@@ -212,7 +212,7 @@ section {
     position: relative;
 }
 header {
-    background: url("header5.jpg") no-repeat fixed;
+    background: url("header8.jpg") no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2837,6 +2837,14 @@ i.features-option-3-icon {
     margin-top: 18px;
     text-align: center;
     color: #8AB833;
+}
+
+img.features-option-3-icon {
+    font-size: 5em;
+    display: inline-block;
+    margin-top: 18px;
+    text-align: center;
+    width: 100%;
 }
 /*div.feature-detail{margin-left: 2px;}*/
 
