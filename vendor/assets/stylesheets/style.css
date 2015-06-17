@@ -2851,6 +2851,7 @@ img.features-option-3-icon {
 .feature-detail h3 {
     color: #888;
     font-weight: 300;
+    text-align: center;
 }
 section#latest-work {
     border-bottom: 1px solid #DDD;
