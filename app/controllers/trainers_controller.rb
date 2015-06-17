@@ -22,9 +22,16 @@ class TrainersController < ApplicationController
   end
 
   def update
+    if @trainer.update(post_params)
+      redirect_to trainers_path, notice: "Trainer was updated"
+    else
+      render 'edit'
+    end
   end
 
   def destroy
+    @trainer.destroy
+    redirect_to trainers_path
   end
 
   private

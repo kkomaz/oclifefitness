@@ -32,6 +32,10 @@
             <div class="col-md-8">
               <div class="blog-post-title">
                 <h3><%= trainer.name %></h3>
+                <% if user_signed_in? %>
+                  <%= link_to "Edit Trainer", edit_trainer_path(trainer) %>
+                  <%= link_to "Destroy", trainer_path(trainer), method: :delete, data: {confirm: "Are you sure you want to delete this user?"} %>
+                <% end %>
               </div>
               <div class="single-blog-meta">
               <p><%= trainer.title %></p>
@@ -52,6 +56,10 @@
               <div class="col-md-8">
                 <div class="blog-post-title">
                   <h3><%= trainer.name %></h3>
+                  <% if user_signed_in? %>
+                    <%= link_to "Edit Trainer", edit_trainer_path(trainer) %>
+                    <%= link_to "Destroy", trainer_path(trainer), method: :delete, data: {confirm: "Are you sure you want to delete this user?"} %>
+                  <% end %>
                 </div>
                 <div class="single-blog-meta">
                 <p><%= trainer.title %></p>
