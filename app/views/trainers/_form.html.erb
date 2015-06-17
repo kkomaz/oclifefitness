@@ -1,0 +1,40 @@
+<%= form_for @trainer do |f| %>
+  <% if @trainer.errors.any? %>
+    <h2><%= pluralize(@trainer.errors.count, "error")%> prevented this trainer from saving: </h2>
+    <ul>
+      <% @trainer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %>
+
+  <br>
+  <br>
+
+  <%= f.label :image, "Image" %> <br>
+  <%= f.file_field :image %>
+
+  <br>
+  <br>
+
+  <%= f.label :title, "Title" %>
+  <%= f.text_field :title %>
+
+  <br>
+  <br>
+
+  <%= f.label :description, "Description" %>
+  <%= f.text_area :description %>
+
+  <br>
+  <br>
+
+  <%= f.submit "Submit" %>
+
+  <br>
+  <br>
+  <br>
+<% end %>

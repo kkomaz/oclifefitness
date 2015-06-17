@@ -1,0 +1,85 @@
+<!-- preloader -->
+<div class="preloading">
+  <%= link_to image_tag("fancy-loading.gif", class: "loading-gif"), root_path %>
+</div>
+<!--################ WRAP START ################-->
+<div id="wrap">
+<!--################ HEADER START ################-->
+  <header class="page-title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>MEET YOUR TRAINERS</h2>
+        </div>
+        <% if user_signed_in? %>
+        <div class="col-md-4">
+          <%= link_to "New Trainer", new_trainer_path, :class => 'button' %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </header>
+  <% @trainers.each.with_index do |trainer,index| %>
+    <% if index.even? %>
+      <section class="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="post-image">
+                <%= image_tag trainer.image(:large) %>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="blog-post-title">
+                <h3><%= trainer.name %></h3>
+              </div>
+              <div class="single-blog-meta">
+              <p><%= trainer.title %></p>
+              </div>
+              <div class="post-content">
+                <p>
+                <%= trainer.description %>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <% elsif index.odd? %>
+        <section class="blog rev">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="blog-post-title">
+                  <h3><%= trainer.name %></h3>
+                </div>
+                <div class="single-blog-meta">
+                <p><%= trainer.title %></p>
+                </div>
+                <div class="post-content">
+                  <p>
+                  <%= trainer.description %>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="post-image">
+                  <%= image_tag trainer.image(:large) %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <% end %>
+    <% end %>
+</div>
+<!--################ PUSH WILL KEEP THE FOOTER AT BOTTOM IF YOU WANT TO CREATE OTHER PAGES ################-->
+<div id="push"></div>
+
+<!-- Preloader script -->
+<script>
+$(window).load(function() {
+    "use strict";
+    $('.preloading').fadeOut();
+});
+</script>
