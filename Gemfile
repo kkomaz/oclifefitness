@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "paperclip", "~> 4.2"
 gem 'aws-sdk', '< 2.0'
 gem 'figaro'
+gem 'redcarpet', '~> 3.2.2'
 
 
 group :development, :test do
