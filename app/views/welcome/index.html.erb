@@ -37,55 +37,7 @@
             </div>
             <div class="row">
                 <!-- Feature -->
-                <div class="col-md-6 feature-option-3">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <center><%= image_tag("dumbbells3.png", class: "features-option-3-icon icon-image") %></center>
-                        </div>
-                        <div class="col-md-8 feature-detail">
-                            <h3>Full Responsive</h3>
-                            <p>There are many variations of passages of generators on the embarrassing hidden in randomised words which don't look even.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Feature -->
-                <div class="col-md-6 feature-option-3">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <center><%= image_tag("bald37.png", class: "features-option-3-icon icon-image") %></center>
-                        </div>
-                        <div class="col-md-8 feature-detail">
-                            <h3>Retina Ready</h3>
-                            <p>There are many variations of passages of generators on the embarrassing hidden in randomised words which don't look even.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Feature -->
-                <div class="col-md-6 feature-option-3">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <center><%= image_tag("man429.png", class: "features-option-3-icon icon-image") %></center>
-                        </div>
-                        <div class="col-md-8 feature-detail">
-                            <h3>Parallax</h3>
-                            <p>There are many variations of passages of generators on the embarrassing hidden in randomised words which don't look even.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Feature -->
-                <div class="col-md-6 feature-option-3">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <center><%= image_tag("trophy56.png", class: "features-option-3-icon icon-image") %></center>
-                        </div>
-                        <div class="col-md-8 feature-detail">
-                            <h3>Clean & Minimal</h3>
-                            <p>There are many variations of passages of generators on the embarrassing hidden in randomised words which don't look even.</p>
-                        </div>
-                    </div>
-                </div>
+                <%= render :partial => 'welcome/service', :collection => @services, :as => :item %>
             </div>
         </div>
     </section>

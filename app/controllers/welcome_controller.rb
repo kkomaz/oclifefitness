@@ -1,4 +1,5 @@
 class WelcomeController < ApplicationController
-  def index 
+  def index
+    @services = Service.limit(4);
   end
 end
