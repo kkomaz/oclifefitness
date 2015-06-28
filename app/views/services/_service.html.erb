@@ -1,0 +1,11 @@
+<div class="col-md-3">
+  <div class="project">
+    <%= image_tag item.image(:medium) %>
+      <span class="overlay"></span>
+        <div class="cnt">
+          <h5><%= item.title %>
+          <br>
+          <%= link_to "View Service", item, class: "btn btn-purity" %>
+        </div>
+  </div>
+</div>

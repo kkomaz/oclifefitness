@@ -1,0 +1,71 @@
+<!-- preloader -->
+<div class="preloading">
+    <img class="loading-gif" src="images/fancy-loading.gif" alt="preloader">
+</div>
+
+<!--################ WRAP START ################-->
+<div id="wrap">
+<header class="page-title">
+  <div class="container">
+    <h2 class="bold"><%= @service.title %></h2>
+    <% if user_signed_in? %>
+        <%= link_to "Edit", edit_service_path(@service) %>
+        <%= link_to "Delete", service_path(@service), method: :delete, data: {confirm: "Are you sure?"} %>
+    <% end %>
+  </div>
+</header>
+
+<section class="single-portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <%= image_tag @service.image(:large)%>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="single-portfolio rev">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-8">
+        <h3 class="bold">Your Services</h3>
+        <p><%= @service.description %></p>
+    </div>
+</section>
+
+<section class="single-portfolio last">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <h3 class="bold">All Services</h3>
+    </div>
+  </div>
+  <div class="row">
+    <%= render partial: "service", collection: @services, as: :item %>
+  </div>
+</section>
+</div>
+
+<!--################ PUSH WILL KEEP THE FOOTER AT BOTTOM IF YOU WANT TO CREATE OTHER PAGES ################-->
+
+<div id="push"></div>
+
+<script>
+$(window).load(function() {
+    "use strict";
+    $('.preloading').fadeOut();
+});
+</script>
+
+
+<!-- *************** RETINA JS FUNCTIONALITY   ****************
+The script assumes you use Apple's prescribed high-resolution modifier (@2x) to denote
+high-resolution image variants on your server.
+For example, if you have an image on your page that looks like this:
+<img src="/images/my_image.png" />
+The script will check your server to see if an alternative image exists at this path:
+"/images/my_image@2x.png"
+That's it!
+:)
+RETINA JS END -->
