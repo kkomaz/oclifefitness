@@ -2425,6 +2425,18 @@ a, a:hover {
     width: 100%;
     display: block;
 }
+
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 800px) {
+    .project img {
+      width: 50%;
+      display: block;
+      text-align: center;
+      padding: 1em auto;
+  }
+}
+
 .project.hidden {
     display: none;
 }
