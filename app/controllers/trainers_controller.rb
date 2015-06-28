@@ -1,5 +1,6 @@
 class TrainersController < ApplicationController
   before_action :find_trainer, :only => [:edit, :update, :destroy]
+  before_action :authenticate_user!, :except => [:index]
   
   def index
     @trainers = Trainer.all
