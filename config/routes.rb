@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contacts, :except => [:show, :destroy, :edit, :update]
   resources :services
   resources :trainers, :except => [:show]
   get 'welcome/index'

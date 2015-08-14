@@ -1,0 +1,29 @@
+<%= form_for @contact, :class => "form-box" do |f| %>
+  <div class="contact-description">
+    <p>We understand that some people prefer one method of communication over another. That's why we make it easy to get in touch with us. </p>
+    <p>Our training facilities are located throughout South Orange County with flagship gyms conveniently located in Irvine and Newport Beach. </p>
+  </div>
+  <br>
+
+  <%= f.label :name, "Your Name" %> <br>
+  <%= f.text_field :name, :class => "form-control input-lg", id: "name" %>
+
+<div class="form-group">
+  <%= f.label :email, "Your Email" %> <br>
+  <%= f.text_field :email, :class => "form-control input-lg", id: "email"%>
+</div>
+
+<div class="form-group">
+  <%= f.label :message, "Leave Us A Message About What You Would Like To Accomplish!" %> <br>
+  <%= f.text_area :message, :class => "form-control input-lg", id: "message", rows: 10 %>
+</div>
+
+<div class= "hidden">
+  <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+</div>
+
+<div class="form-group">
+<%= f.submit "Send", :class => "btn btn-purity btn-lg btn-block", id: "submit_btn" %>
+</div>
+
+<% end %>
