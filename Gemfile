@@ -15,6 +15,11 @@ gem 'redcarpet', '~> 3.2.2'
 gem 'friendly_id', '~> 5.1.0'
 gem 'mail_form', '~> 1.5.1'
 
+gem 'compass-rails'
+gem 'sass-globbing'
+gem 'sass'
+gem 'susy'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
