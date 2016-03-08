@@ -14,91 +14,17 @@
   <link rel="shortcut icon" href="ico/favicon.png">
 </head>
 <body>
-
-<div class="navbar-wrapper">
-  <nav class="navbar navbar-default navbar-fixed-top navbar-purity" role="navigation">
-  <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    <a class="navbar-brand" href="#">
-      <%= link_to image_tag("logo2.gif", size: "150x45", id: "logokhan"), root_path %>
-    </a>
-  </div>
-  <div class="collapse navbar-collapse" id="main-navbar">
-    <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to "ABOUT US", trainers_path %></li>
-      <li><%= link_to "SERVICES", services_path %></li>
-      <li><%= link_to "TESTIMONIALS", testimonials_path %></li>
-      <li><%= link_to "CONTACT", new_contact_path %></li>
-      <% if user_signed_in? %>
-      <li><%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %></li>
-      <% end %>   
-    </ul>
-    </div>
-  </div>
-  </nav>
-</div>
-<!--################ NAVIGATION END ################-->
-
 <%= yield %>
-
-<!--################ FOOTER START ################-->
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <!--<h2>about us...</h2>-->
-                <%= image_tag("logo2.gif")%>
-                <p>
-                    <br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-                <p class="copyright">
-                    © 2014 Purity Bootstrap Template
-                    <br />Built with BS3
-                </p>
-            </div>
-            <div class="col-md-2">
-                <h2>links</h2>
-                <ul class="list-unstyled footer-links">
-                    <li><a href="#" class="flink">About Us</a>
-                    </li>
-                    <li><a href="#" class="flink">The Team</a>
-                    </li>
-                    <li><a href="#" class="flink">Blog</a>
-                    </li>
-                    <li><a href="#" class="flink">Contact</a>
-                    </li>
-                    <li><a href="#" class="flink">Privacy Policy</a>
-                    </li>
-                    <li><a href="#" class="flink">Terms of Use</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2>subscribe</h2>
-                <a href="#" class="social-network sn2 behance"></a>
-                <a href="#" class="social-network sn2 facebook"></a>
-                <a href="#" class="social-network sn2 pinterest"></a>
-                <a href="#" class="social-network sn2 flickr"></a>
-                <a href="#" class="social-network sn2 dribbble"></a>
-                <a href="#" class="social-network sn2 lastfm"></a>
-                <a href="#" class="social-network sn2 forrst"></a>
-                <a href="#" class="social-network sn2 xing"></a>
-            </div>
-            <div class="col-md-3">
-                <h2 class="center"><i class="icon-twitter"></i>
-                </h2>
-                <div class="tweets" data-username="hunzaboy" data-count="2"></div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!--################ FOOTER END ################-->
-
 </body>
 </html>
+
+
+<!-- <ul class="">
+  <li><%= link_to "ABOUT US", trainers_path %></li>
+  <li><%= link_to "SERVICES", services_path %></li>
+  <li><%= link_to "TESTIMONIALS", testimonials_path %></li>
+  <li><%= link_to "CONTACT", new_contact_path %></li>
+  <% if user_signed_in? %>
+  <li><%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %></li>
+  <% end %>
+</ul> -->
