@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Raleway', 'Open Sans', san-serif;
+}
+
+p {
+  color: $white;
+}
+
+body {
+  background-color: $black;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.wrapper {
+	width: 1440px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
+.main_header {
+  background-color: $black;
+  padding: 1.5em 0;
+  position: relative;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  &__logo {
+    @include position(absolute, 50% null null 0);
+
+    transform: translateY(-50%);
+    img {
+      width: 50px;
+    }
+  }
+
+  &__company-name {
+    h1 {
+      letter-spacing: 0.4em;
+      color: $white;
+    }
+  }
+
+  &__nav-list {
+    @include position(absolute, 50% 0 null null);
+
+    transform: translateY(-50%);
+    a {
+      color: $white;
+      font-size: .75em;
+      margin-left: 1em;
+      text-decoration: none;
+    }
+  }
+}

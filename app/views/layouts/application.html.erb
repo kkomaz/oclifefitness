@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <%= analytics_init if Rails.env.production? %>
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
@@ -14,17 +15,26 @@
   <link rel="shortcut icon" href="ico/favicon.png">
 </head>
 <body>
+  <header class="main_header">
+    <div class="header__logo">
+      <%= link_to image_tag("facebook.png"), root_path %>
+      <%= link_to image_tag("twitter2.png"), root_path %>
+      <%= link_to image_tag("yelp2.png"), root_path %>
+      <%= link_to image_tag("youtube.png"), root_path %>
+    </div>
+    <div class="header__company-name">
+      <h1>OC LIFE FITNESS</h1>
+    </div>
+    <div class="header__nav-list">
+      <%= link_to "ABOUT US", trainers_path %>
+      <%= link_to "SERVICES", services_path %>
+      <%= link_to "TESTIMONIALS", testimonials_path %>
+      <%= link_to "CONTACT", new_contact_path %>
+      <% if user_signed_in? %>
+        <%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %>
+      <% end %>
+    </div>
+  </header>
 <%= yield %>
 </body>
 </html>
-
-
-<!-- <ul class="">
-  <li><%= link_to "ABOUT US", trainers_path %></li>
-  <li><%= link_to "SERVICES", services_path %></li>
-  <li><%= link_to "TESTIMONIALS", testimonials_path %></li>
-  <li><%= link_to "CONTACT", new_contact_path %></li>
-  <% if user_signed_in? %>
-  <li><%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %></li>
-  <% end %>
-</ul> -->
