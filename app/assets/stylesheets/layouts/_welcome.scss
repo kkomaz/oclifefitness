@@ -1,0 +1,99 @@
+.welcome-page {
+  .hero-page {
+    display: table;
+
+    &__profile--image {
+      display: table-cell;
+
+      img {
+        border-radius: .5em;
+      }
+    }
+    &__profile--description {
+      // border: 1px solid red;
+      display: table-cell;
+      vertical-align: top;
+      width: 50%;
+    }
+  }
+
+  .profile {
+    padding: 1.5em 0;
+    text-align: center;
+    &__name {
+      letter-spacing: .1em;
+      font-size: 2.1em;
+    }
+
+    &__description {
+      padding: 0 2em;
+    }
+  }
+
+  .promo-video {
+    padding: 1.5em 0;
+    text-align: center;
+
+    iframe {
+      width: 80%;
+      box-shadow: 0px 0px 5px 2px white;
+      border: none;
+    }
+  }
+
+  .services {
+    @include position(relative);
+
+    padding: 2rem 0 6.5rem 0;
+    text-align: center;
+
+    .service {
+      @include position(relative);
+
+      -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+      box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+      -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+      background: white;
+      border-radius: .5em;
+      float: left;
+      height: 300px;
+      margin: 0 1% 0 1%;
+      padding: 1.5em 0;
+      text-align: center;
+      width: 23%;
+
+      h1, h2, h3, h4, p {
+        color: $black;
+      }
+
+      h2 {
+        font-weight: $bold;
+      }
+
+      p {
+        margin: 0 0 2rem 0;
+      }
+
+      img {
+        width: 7em;
+        height: 100px;
+      }
+      &:after {
+        content: " ";
+        @include position(absolute, null null -50px 50%);
+
+        height: 50px;
+        border-left: 2px solid #c9c7d3;
+      }
+    }
+    &:before {
+      content: " ";
+      @include position(absolute, null null 52px 50%);
+
+      border-top: 2px solid #c9c7d3;
+      margin-left: -33.7%;
+      width: 67.6%;
+    }
+  }
+
+}

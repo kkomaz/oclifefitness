@@ -30,6 +30,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: $white;
 	font-weight: 300;
 }
 
@@ -53,8 +54,11 @@ h1, h2, h3, h4, h5, h6 {
 
   &__company-name {
     h1 {
-      letter-spacing: 0.4em;
-      color: $white;
+      a {
+        letter-spacing: 0.4em;
+        color: $white;
+        text-decoration: none;
+      }
     }
   }
 

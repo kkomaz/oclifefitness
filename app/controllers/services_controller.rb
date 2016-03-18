@@ -3,8 +3,7 @@ class ServicesController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :show]
 
   def index
-    @service = Service.first
-    redirect_to @service
+    @services = Service.all
   end
 
   def new

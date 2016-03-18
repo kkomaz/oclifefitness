@@ -1,42 +1,33 @@
-<div class="wrapper">
-  <div class="hero-page">
-    <div class="hero-page__sign-up">
+<div class="content welcome-page">
+  <div class="wrapper">
+    <div class="hero-page">
+      <div class="hero-page__profile--image">
+        <%= image_tag("danny_lee_hero.png")%>
+      </div>
+      <div class="hero-page__profile--description">
+        <div class="profile">
+          <h1 class="profile__name">Danny Lee</h1>
+          <h3>Orange County's #1 Personal Trainer</h3>
+          <div class="profile__description">
+            <p>Danny will help you burn fat and build muscle at the SAME time.  He will show you exactly how to train, diet, and supplment your way to your goals</p>
+          </div>
+        </div>
+        <div class="promo-video">
+          <iframe src="http://player.vimeo.com/video/56072786" width="580" height="240"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="services clearfix">
+      <div class="wrapper">
+        <h1>Our Services</h1>
+        <%= render partial: "service", collection: @services, as: :item %>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- <header data-stellar-background-ratio="0">
-  <div class="container home">
-    <div class="flexslider home">
-      <ul class="slides">
-        <li class="margin5">
-          <div class="col-md-6 animated fadeInLeftBig" id="main-media">
-            <iframe src="http://player.vimeo.com/video/56072786" width="580" height="240"></iframe>
-          </div>
-
-          <div class="col-md-5">
-            <strong><h1>Are YOU ready to make a change?</h1></strong>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</header>
-  <section id="features" class="paddingtop20 features-home-page">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <h1 class="text-muted">Our Services</h1>
-                  <p>The gym is great because it is the kind of place where "everybody knows your name!" and everyone is super friendly!</p>
-              </div>
-          </div>
-          <div class="row">
-              <!-- Feature -->
-              <%= render :partial => 'welcome/service', :collection => @services, :as => :item %>
-          </div>
-      </div>
-  </section>
-  <section class="index-description">
+  <!-- <section class="index-description">
       <div class="container">
           <div class="row">
               <div class="col-md-12 center">

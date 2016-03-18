@@ -1,11 +1,5 @@
-<div class="col-md-6 feature-option-3">
-  <div class="row">
-    <div class="col-md-2">
-      <center><%= link_to(image_tag(item.image, class: "features-option-3-icon icon-image"), item) %></center>
-    </div>
-    <div class="col-md-8 feature-detail">
-      <h3><%= item.title %></h3>
-      <p><%= truncate item.description, length: 160 %></p>
-    </div>
-  </div>
+<div class="service">
+  <%= image_tag(item.image, class: "service__img") %>
+  <h2><%= item.title %></h2>
+  <p><%= item.description %></p>
 </div>
