@@ -46,6 +46,7 @@
   .services {
     @include position(relative);
 
+    border-bottom: 1px solid #E9E9E9;
     padding: 2rem 0 6.5rem 0;
     text-align: center;
 
