@@ -1,6 +1,8 @@
 .welcome-page {
   .hero-page {
+    border-bottom: 1px solid #E9E9E9;
     display: table;
+    padding-bottom: 5em;
 
     &__profile--image {
       display: table-cell;
