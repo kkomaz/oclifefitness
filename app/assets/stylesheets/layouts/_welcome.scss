@@ -1,8 +1,13 @@
 .welcome-page {
+
   .hero-page {
     border-bottom: 1px solid #E9E9E9;
-    display: table;
     padding-bottom: 5em;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
 
     &__profile--image {
       display: table-cell;
@@ -12,7 +17,6 @@
       }
     }
     &__profile--description {
-      // border: 1px solid red;
       display: table-cell;
       vertical-align: top;
       width: 50%;
@@ -46,9 +50,14 @@
   .services {
     @include position(relative);
 
+    background: $gray;
     border-bottom: 1px solid #E9E9E9;
-    padding: 2rem 0 6.5rem 0;
+    padding: 3rem 0 7.5rem 0;
     text-align: center;
+
+    h1, h2, h3, h4, p {
+      color: $black;
+    }
 
     .service {
       @include position(relative);
@@ -64,10 +73,6 @@
       padding: 1.5em 0;
       text-align: center;
       width: 23%;
-
-      h1, h2, h3, h4, p {
-        color: $black;
-      }
 
       h2 {
         font-weight: $bold;
@@ -91,12 +96,168 @@
     }
     &:before {
       content: " ";
-      @include position(absolute, null null 52px 50%);
+      @include position(absolute, null null 70px 50%);
 
       border-top: 2px solid #c9c7d3;
-      margin-left: -33.7%;
-      width: 67.6%;
+      margin-left: -37.5%;
+      width: 75.2%;
     }
   }
 
+  .client {
+    background: $dark_gray;
+    border-bottom: 1px solid #E9E9E9;
+    padding: 5rem 0 5rem 0;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center
+    }
+
+    &__description {
+      text-align: center;
+
+      &--title {
+        font-weight: $bold;
+      }
+
+      &--info {
+        margin: 10px auto 40px;
+        width: 600px;
+      }
+    }
+
+    &__image {
+      img {
+        border-radius: .5em;
+      }
+    }
+  }
+
+  .learn-more {
+    &:hover {
+      background-color: $highlight-green;
+    }
+  }
+
+  .contact {
+    border-bottom: 1px solid #E9E9E9;
+    padding: 5rem 0 5rem 0;
+
+    &__form {
+      float: left;
+      text-align: center;
+      width: 50%;
+
+      .form-group {
+        padding-bottom: 1.5em;
+      }
+
+      .new_contact {
+        background: $gray;
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 2em 2em 4em;
+
+        img {
+          margin-bottom: 1.5em;
+        }
+      }
+
+      label {
+        color: $black;
+      }
+
+      input {
+        -ms-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+
+        background: transparent;
+        border: solid 1px #b3aca7;
+        color: #726659;
+        font-size: 0.9em;
+        height: 50px;
+        max-width: 90%;
+        outline: none;
+        padding: 0px 15px 0px 15px;
+        transition: all 0.3s ease-in-out;
+        width: 470px;
+      }
+
+      input:hover {
+        background: $highlight-green;
+        color: #e2dedb;
+      }
+
+      textarea {
+        width: 470px;
+        max-width: 90%;
+        height: 110px;
+        max-height: 110px;
+        padding: 15px;
+
+        background: transparent;
+        outline: none;
+
+        color: #726659;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.875em;
+
+        border: solid 1px #b3aca7;
+
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+      }
+
+      textarea:hover {
+        background: $highlight-green;
+        color: #e2dedb;
+      }
+
+      #submit_btn {
+        width: 470px;
+        max-width: 90%;
+
+        padding: 0;
+        margin: -5px 0px 0px 0px;
+
+        font-family: 'Lato', sans-serif;
+        font-size: 0.875em;
+        color: #b3aca7;
+
+        outline:none;
+        cursor: pointer;
+
+        border: solid 1px #b3aca7;
+
+        &:hover {
+          color: #e2dedb;
+        }
+      }
+    }
+
+    &__details {
+      float: left;
+      width: 50%;
+
+      .detail {
+        &__question {
+          .question-header {
+            text-transform: uppercase;
+          }
+        }
+        &__address {
+          &--physical {
+
+          }
+          &--online {
+
+          }
+        }
+      }
+    }
+  }
 }
