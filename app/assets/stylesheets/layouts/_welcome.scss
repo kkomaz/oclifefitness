@@ -14,11 +14,6 @@
     border-bottom: 1px solid #E9E9E9;
     padding-bottom: 5em;
 
-    .wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-
     &__profile--image {
       display: table-cell;
 
@@ -119,11 +114,6 @@
     border-bottom: 1px solid #E9E9E9;
     padding: 5rem 0 5rem 0;
 
-    .wrapper {
-      display: flex;
-      justify-content: space-around;
-      align-items: center
-    }
 
     &__description {
       text-align: center;
