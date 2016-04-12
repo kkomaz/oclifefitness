@@ -1,0 +1,39 @@
+.main_header {
+  background-color: $black;
+  padding: 1.5em 0;
+  position: relative;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  &__membership {
+    padding-top: 2em;
+    width: 23.23176%;
+    float: left;
+  }
+
+  &__company-name {
+    float: left;
+    display: block;
+    margin-left: 2%;
+    width: 48.82117%;
+    text-align: center;
+
+    h1 {
+      a {
+        color: $white;
+        font-size: 1em;
+        letter-spacing: 0.4em;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__nav-list {
+    float: left;
+    display: block;
+    width: 23.23176%;
+    padding-top: 2em;
+  }
+}

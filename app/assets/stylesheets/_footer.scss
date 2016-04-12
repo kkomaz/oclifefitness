@@ -1,0 +1,24 @@
+// Social Media footer
+.social-media {
+  padding-top: 1em;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  a {
+    margin-left: .5em;
+  }
+
+  .contact-info {
+    text-align: center;
+
+    &__email {
+      font-size: 1.3em;
+    }
+  }
+}
