@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/Compass/compass-rails.git
+  revision: 62e37c73e8c8470b094e8d7f2cbb98356b591e57
+  branch: master
+  specs:
+    compass-rails (3.0.2)
+      compass (~> 1.0.0)
+      sass-rails (< 5.1)
+      sprockets (< 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -93,10 +103,6 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    compass-rails (3.0.2)
-      compass (~> 1.0.0)
-      sass-rails (< 5.1)
-      sprockets (< 4.0)
     daemons (1.2.2)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
@@ -319,7 +325,7 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.1.0)
-  compass-rails
+  compass-rails!
   database_cleaner
   devise
   factory_girl_rails

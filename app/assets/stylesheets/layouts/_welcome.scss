@@ -1,4 +1,14 @@
 .welcome-page {
+  @include show-grid(layout($susy $susy-debug));
+  @include container;
+
+  @include phone {
+    @include show-grid(layout($susy-phone $susy-debug));
+
+    &:before {
+      content: 'phone layout' !important;
+    }
+  }
 
   .hero-page {
     border-bottom: 1px solid #E9E9E9;

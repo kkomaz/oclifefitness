@@ -14,7 +14,7 @@ gem 'redcarpet', '~> 3.2.2'
 gem 'friendly_id', '~> 5.1.0'
 gem 'mail_form', '~> 1.5.1'
 
-gem 'compass-rails'
+gem "compass-rails", github: "Compass/compass-rails", branch: "master"
 gem 'sass-globbing'
 gem 'sass'
 gem 'susy'

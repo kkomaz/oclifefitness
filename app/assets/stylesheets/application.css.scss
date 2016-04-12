@@ -1,13 +1,18 @@
 // Oclifefitness
 @import 'compass';
 @import 'susy';
+@import "breakpoint";
 
 // Variables
 @import './variables/colors';
+@import './variables/grid-setting';
+@import './variables/breakpoint';
 
 // Mixins
 @import './mixins/position';
 @import './mixins/size';
+@import './mixins/media-queries';
+
 
 
 // Global imports
