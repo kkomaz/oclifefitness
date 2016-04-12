@@ -2,10 +2,16 @@
 @import 'compass';
 @import 'susy';
 
+// Variables
+@import './variables/colors';
+
+// Mixins
+@import './mixins/position';
+@import './mixins/size';
+
+
 // Global imports
-@import 'variables';
 @import 'globals';
-@import 'mixins';
 @import 'header';
 @import 'footer';
 
