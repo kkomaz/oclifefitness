@@ -2,12 +2,14 @@
 <html>
 <head>
   <title>Oclifefitness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <%= analytics_init if Rails.env.production? %>
   <link href='//fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
@@ -16,12 +18,12 @@
 </head>
 <body>
   <header class="main_header clearfix">
-    <div class="header__membership">
-      <%= link_to "MEMBER LOGIN", root_path %>
-    </div>
     <div class="header__company-name">
       <h1><%= link_to "OC LIFE FITNESS", root_path %></h1>
     </div>
+
+    <a href="#" class="header__nav-list-hamburger"><i class="fa fa-bars"></i></a>
+
     <div class="header__nav-list">
       <%= link_to "ABOUT US", trainers_path %>
       <%= link_to "SERVICES", services_path %>
