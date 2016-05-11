@@ -13,6 +13,7 @@
   .hero-page {
     @include phone {
       text-align: center;
+      padding-bottom: 3em;
     }
 
     border-bottom: 1px solid #E9E9E9;
@@ -79,11 +80,14 @@
   }
 
   .services {
+    @include phone {
+      padding: 3rem 0;
+    }
     @include position(relative);
 
     background: $gray;
     border-bottom: 1px solid #E9E9E9;
-    padding: 3rem 0 7.5rem 0;
+    padding: 3rem 0 7.5rem;
     text-align: center;
 
     h1, h2, h3, h4, p {
@@ -96,6 +100,13 @@
     }
 
     .service {
+      @include phone {
+        display: block;
+        float: none;
+        margin: 0 2em 1em;
+        width: inherit;
+      }
+
       @include position(relative);
 
       -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
@@ -132,6 +143,10 @@
       }
 
       &:after {
+        @include phone {
+          display: none;
+        }
+
         content: " ";
         @include position(absolute, null null -50px 50%);
 
@@ -141,6 +156,10 @@
     }
 
     &:before {
+      @include phone {
+        display: none;
+      }
+
       content: " ";
       @include position(absolute, null null 70px 50%);
 
@@ -151,12 +170,23 @@
   }
 
   .client {
+    @include phone {
+      padding: .5em 0;
+    }
+
     background: $dark_gray;
     border-bottom: 1px solid #E9E9E9;
     padding: 5rem 0 5rem 0;
 
 
     &__description {
+      @include phone {
+        @include span(full);
+      }
+
+      @include span(6 of 12);
+
+      padding: 2em 0;
       text-align: center;
 
       &--title {
@@ -169,6 +199,14 @@
     }
 
     &__image {
+      @include phone {
+        @include span(full);
+      }
+
+      @include span(6 of 12 last);
+
+      text-align: center;
+
       img {
         @include phone {
           max-width: 300px;
@@ -192,9 +230,12 @@
     padding: 5rem 0 2rem 0;
 
     &__form {
-      float: left;
+      @include phone {
+        @include span(full);
+      }
+
+      @include span(6 of 12);
       text-align: center;
-      width: 50%;
 
       .form-group {
         padding-bottom: 1.5em;
@@ -286,8 +327,11 @@
     }
 
     &__details {
-      float: left;
-      width: 50%;
+      @include phone {
+        @include span(full);
+      }
+
+      @include span(6 of 12 last);
 
       .detail {
         &__question {
@@ -295,6 +339,13 @@
             text-transform: uppercase;
           }
         }
+
+        &__image {
+          @include phone {
+            padding: 0 2em;
+          }
+        }
+
         &__address {
           &--physical {
 
@@ -303,6 +354,11 @@
 
           }
         }
+      }
+
+      iframe {
+        height: 500px;
+        width: 100%;
       }
     }
   }
