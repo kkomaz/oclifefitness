@@ -39,6 +39,12 @@
     display: block;
     padding-top: 1.2em;
 
+    a {
+      &:hover {
+        color: $highlight;
+      }
+    }
+
     &.active {
       @include phone {
         display: block;
@@ -48,6 +54,7 @@
           border-bottom: 1px solid $gray;
           display: block;
           padding: 1em 0;
+
           &:last-child {
             border-bottom: none;
           }
@@ -67,6 +74,7 @@
         color: $white;
   		}
     }
+
     display: none;
   }
 }

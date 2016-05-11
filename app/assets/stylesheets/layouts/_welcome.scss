@@ -11,17 +11,37 @@
   }
 
   .hero-page {
+    @include phone {
+      text-align: center;
+    }
+
     border-bottom: 1px solid #E9E9E9;
     padding-bottom: 5em;
 
     &__profile--image {
+      @include phone {
+        display: block;
+      }
+
       display: table-cell;
 
       img {
+        @include phone {
+          max-width: 300px;
+
+          border-radius: 100%;
+        }
+
         border-radius: .5em;
       }
     }
+
     &__profile--description {
+      @include phone {
+        display: block;
+        width: inherit;
+      }
+
       display: table-cell;
       vertical-align: top;
       width: 50%;
@@ -91,6 +111,7 @@
         width: 7em;
         height: 100px;
       }
+
       &:after {
         content: " ";
         @include position(absolute, null null -50px 50%);
@@ -99,6 +120,7 @@
         border-left: 2px solid #c9c7d3;
       }
     }
+
     &:before {
       content: " ";
       @include position(absolute, null null 70px 50%);
@@ -124,12 +146,17 @@
 
       &--info {
         margin: 10px auto 40px;
-        width: 600px;
       }
     }
 
     &__image {
       img {
+        @include phone {
+          max-width: 300px;
+
+          border-radius: 100%;
+        }
+
         border-radius: .5em;
       }
     }
