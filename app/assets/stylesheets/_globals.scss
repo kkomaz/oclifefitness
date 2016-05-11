@@ -28,4 +28,8 @@
     padding: 1rem 5rem;
     font-size: 1.35rem;
   }
+
+  &:hover {
+    background-color: $highlight;
+  }
 }

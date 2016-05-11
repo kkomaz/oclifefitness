@@ -37,9 +37,10 @@
     }
 
     display: block;
-    padding-top: 1.2em;
 
     a {
+      margin-right: 1em;
+
       &:hover {
         color: $highlight;
       }
@@ -66,7 +67,7 @@
   &__nav-list-hamburger {
     @include phone {
       display: block;
-      padding-top: 1em;
+      padding-top: 3em;
   		float: right;
 
   		i {

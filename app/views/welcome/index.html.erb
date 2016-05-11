@@ -7,9 +7,11 @@
     <div class="hero-page__profile--description">
       <div class="profile">
         <h1 class="profile__name">Danny Lee</h1>
-        <h3>Orange County's #1 Personal Trainer</h3>
+
+        <h3 class="profile__tag">Orange County's #1 Personal Trainer</h3>
+
         <div class="profile__description">
-          <p>Danny will help you burn fat and build muscle at the SAME time.  He will show you exactly how to train, diet, and supplment your way to your goals</p>
+          <p>Danny will help you burn fat and build muscle at the <strong class="highlight">SAME</strong> time.  He will show you exactly how to train, diet, and supplment your way to your goals</p>
         </div>
       </div>
       <div class="promo-video">
@@ -19,7 +21,7 @@
   </div>
 
   <div class="services clearfix">
-    <h1>Our Services</h1>
+    <h1 class="services__title">Our Services</h1>
     <%= render partial: "service", collection: @services, as: :item %>
   </div>
 
