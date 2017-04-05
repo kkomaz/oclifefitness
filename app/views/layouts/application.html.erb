@@ -18,6 +18,21 @@
 </head>
 <body>
   <header class="main_header clearfix">
+    <div class="header__info">
+      <div class="header__contacts">
+        <%= link_to "location |", "http://google.com"  %>
+        <%= link_to "(949)335-8680 |", "http://google.com"  %>
+        <%= link_to "info@oclifefintess.com", "http://google.com"  %>
+
+      </div>
+      <div class="header__social-media">
+        <%= fa_stacked_icon "instagram", base: "square-o", class: "icon"%>
+        <%= fa_stacked_icon "facebook", base: "square-o", class: "icon"%>
+        <%= fa_stacked_icon "linkedin-square", base: "square-o", class: "icon"%>
+        <%= fa_stacked_icon "youtube", base: "square-o", class: "icon"%>
+      </div>
+    </div>
+
     <div class="header__company-name">
       <h1><%= link_to "OC LIFE FITNESS", root_path %></h1>
     </div>
