@@ -1,9 +1,46 @@
 // Social Media footer
-.social-media {
+.oc-footer {
+  @include container;
+  border-top: 1px solid $gray;
   padding-top: 1em;
 
-  &__wrapper {
+  &__social-media {
+    @include span(full);
     text-align: center;
+  }
+
+  &__contact {
+    @include phone {
+      @include span(full);
+    }
+
+    @include span(6 of 12);
+
+    padding: 20px;
+  }
+
+  &__contact-info {
+    @include phone {
+      text-align: center;
+    }
+
+    margin-bottom: 20px;
+  }
+
+  &__maps {
+    @include phone {
+      @include span(full);
+    }
+
+    @include span(6 of 12 last);
+
+    padding: 20px;
+  }
+
+  &__map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   img {

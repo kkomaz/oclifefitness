@@ -19,6 +19,15 @@
     padding: 10px 40px;
   }
 
+  &__secondary {
+    @include phone {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+    }
+  }
+
   &__social-media {
     .icon {
       color: white;
@@ -26,10 +35,6 @@
   }
 
   &__company-name {
-    @include phone {
-      float: left;
-    }
-
     display: block;
     text-align: center;
 

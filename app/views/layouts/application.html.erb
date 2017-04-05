@@ -33,11 +33,14 @@
       </div>
     </div>
 
-    <div class="header__company-name">
-      <h1><%= link_to "OC LIFE FITNESS", root_path %></h1>
-    </div>
+    <div class="header__secondary">
+      <div class="header__company-name">
+        <h1><%= link_to "OC LIFE FITNESS", root_path %></h1>
+      </div>
 
-    <a href="#" class="header__nav-list-hamburger"><i class="fa fa-bars"></i></a>
+      <a href="#" class="header__nav-list-hamburger"><i class="fa fa-bars"></i></a>
+
+    </div>
 
     <div class="header__nav-list">
       <%= link_to "ABOUT US", trainers_path %>
@@ -52,18 +55,37 @@
 
   <%= yield %>
 
-  <footer class="social-media">
-    <div class="wrapper">
-      <div class="social-media__wrapper">
-        <%= link_to image_tag("facebook.png"), root_path %>
-        <%= link_to image_tag("twitter2.png"), root_path %>
-        <%= link_to image_tag("yelp2.png"), root_path %>
-        <%= link_to image_tag("youtube.png"), root_path %>
+  <footer class="oc-footer clearfix">
+    <div class="oc-footer__contact">
+      <h3 class="title title--center">Contact Us</h3>
+      <div class="oc-footer__text-container">
+        <p>We are always happy to hear from you so if you have any questions, comments, or inquiries please feel free to contact us at any time. We are available to serve your needs 24 hours/day 7 days a week.
+          We understand that some people prefer one method of communication over another. That's why we make it easy to get in touch with us.
+        </p>
+      </div>
+
+      <div class="oc-footer__contact-info">
+        <h3>Call Us</h3>
+        <h4>(949)335-8680</h4>
+        <h3>Email Us</h3>
+        <h4>info@oclifefintess.com</h4>
+        <h3>Address</h3>
+        <h4>17811 Skypark Circle, Suite E Irvine, CA 92614</h4>
       </div>
     </div>
-    <div class="contact-info">
-      <h4 class="contact-info__number">(949)335-8680</h4>
-      <h4 class="contact-info__email"><%= link_to 'info@oclifefintess.com', root_path %></h4>
+
+    <div class="oc-footer__maps">
+      <h3 class="title title--center">Location</h3>
+      <div class="oc-footer__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.653995322716!2d-117.85444869999999!3d33.6920224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdeeaac871103%3A0x78eb6715596ce6b0!2sOC+Life+Fitness!5e0!3m2!1sen!2sus!4v1439585680963"></iframe>
+      </div>
+    </div>
+
+    <div class="oc-footer__social-media">
+      <%= link_to image_tag("facebook.png"), root_path %>
+      <%= link_to image_tag("twitter2.png"), root_path %>
+      <%= link_to image_tag("yelp2.png"), root_path %>
+      <%= link_to image_tag("youtube.png"), root_path %>
     </div>
   </footer>
 </body>
