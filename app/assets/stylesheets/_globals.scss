@@ -3,14 +3,16 @@
 }
 
 .button {
-  background-color: #333;
+  background-color: $red;
   border: none;
   outline: none;
-  padding: .6rem 3.5rem;
   font-weight: 700;
   color: $white;
   text-decoration: none;
   text-align: center;
+  font-size: 1em;
+  padding: 1em 2em;
+
 
   &--highlight {
     background: $highlight-green;
@@ -27,9 +29,5 @@
   &--large {
     padding: 1rem 5rem;
     font-size: 1.35rem;
-  }
-
-  &:hover {
-    background-color: $highlight;
   }
 }

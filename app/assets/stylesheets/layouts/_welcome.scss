@@ -1,6 +1,5 @@
 .welcome-page {
   @include show-grid(layout($susy $susy-debug));
-  @include container;
 
   @include phone {
     @include show-grid(layout($susy-phone $susy-debug));
@@ -20,6 +19,10 @@
     &-control {
       background-color: $black;
       background-image: none;
+
+      @include phone {
+        display: none;
+      }
     }
 
     &-image {
@@ -35,6 +38,8 @@
   }
 
   .hero-page {
+    @include container;
+
     @include phone {
       text-align: center;
       padding-bottom: 3em;
@@ -111,14 +116,15 @@
 
     background: $gray;
     border-bottom: 1px solid #E9E9E9;
-    padding: 3rem 0 7.5rem;
-    text-align: center;
+    padding: 3rem 1em 7.5rem;
 
-    h1, h2, h3, h4, p {
+    h2, h3, h4, p {
       color: $black;
     }
 
     &__title {
+      text-align: center;
+      color: $red;
       font-weight: $bold;
       margin: 0 0 1em;
     }
@@ -134,22 +140,27 @@
       @include position(relative);
 
       -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
-      box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
       -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+      align-items: center;
       background: white;
       border-radius: .5em;
+      box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+      color: black;
+      display: flex;
+      flex-direction: column;
       float: left;
       height: 300px;
+      justify-content: center;
       margin: 0 1% 0 1%;
       padding: 1.5em 0;
       text-align: center;
       width: 23%;
 
       &__button {
+        margin-top: 20px;
         a {
-          @include position(absolute, null null 15% 50%);
-
-          transform: translateX(-50%);
+          font-size: 1em;
+          padding: 1em 2em;
         }
       }
 
@@ -165,40 +176,15 @@
         width: 7em;
         height: 100px;
       }
-
-      &:after {
-        @include phone {
-          display: none;
-        }
-
-        content: " ";
-        @include position(absolute, null null -50px 50%);
-
-        height: 50px;
-        border-left: 2px solid #c9c7d3;
-      }
-    }
-
-    &:before {
-      @include phone {
-        display: none;
-      }
-
-      content: " ";
-      @include position(absolute, null null 70px 50%);
-
-      border-top: 2px solid #c9c7d3;
-      margin-left: -37.5%;
-      width: 75.2%;
     }
   }
 
   .client {
+    @include container;
     @include phone {
       padding: .5em 0;
     }
 
-    background: $dark_gray;
     border-bottom: 1px solid #E9E9E9;
     padding: 5rem 0 5rem 0;
 
@@ -250,6 +236,7 @@
   }
 
   .contact {
+    @include container;
     border-bottom: 1px solid #E9E9E9;
     padding: 5rem 0 2rem 0;
 
