@@ -11,8 +11,15 @@
   }
 
   .carousel {
+    padding: 0 30px 30px 30px;
+
     &-inner {
       height: 500px;
+    }
+
+    &-control {
+      background-color: $black;
+      background-image: none;
     }
 
     &-image {
