@@ -1,3 +1,7 @@
+// Bootsrap
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
 // Oclifefitness
 @import 'compass';
 @import 'susy';
@@ -12,7 +16,6 @@
 @import './mixins/position';
 @import './mixins/size';
 @import './mixins/media-queries';
-
 
 
 // Global imports

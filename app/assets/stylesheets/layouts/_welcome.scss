@@ -10,6 +10,23 @@
     }
   }
 
+  .carousel {
+    &-inner {
+      height: 500px;
+    }
+
+    &-image {
+      display: flex;
+      justify-content: center;
+
+      img {
+        object-fit: cover;
+        overflow: hidden;
+        max-height: 500px;
+      }
+    }
+  }
+
   .hero-page {
     @include phone {
       text-align: center;
