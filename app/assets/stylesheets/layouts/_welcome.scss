@@ -17,7 +17,6 @@
     }
 
     &-control {
-      background-color: $black;
       background-image: none;
 
       @include phone {
@@ -34,47 +33,6 @@
         overflow: hidden;
         max-height: 500px;
       }
-    }
-  }
-
-  .hero-page {
-    @include container;
-
-    @include phone {
-      text-align: center;
-      padding-bottom: 3em;
-    }
-
-    border-bottom: 1px solid #E9E9E9;
-    padding-bottom: 5em;
-
-    &__profile--image {
-      @include phone {
-        display: block;
-      }
-
-      display: table-cell;
-
-      img {
-        @include phone {
-          max-width: 300px;
-
-          border-radius: 100%;
-        }
-
-        border-radius: .5em;
-      }
-    }
-
-    &__profile--description {
-      @include phone {
-        display: block;
-        width: inherit;
-      }
-
-      display: table-cell;
-      vertical-align: top;
-      width: 50%;
     }
   }
 
@@ -115,7 +73,6 @@
     @include position(relative);
 
     background: $gray;
-    border-bottom: 1px solid #E9E9E9;
     padding: 3rem 1em 7.5rem;
 
     h2, h3, h4, p {
@@ -149,7 +106,6 @@
       display: flex;
       flex-direction: column;
       float: left;
-      height: 300px;
       justify-content: center;
       margin: 0 1% 0 1%;
       padding: 1.5em 0;
@@ -173,8 +129,8 @@
       }
 
       img {
-        width: 7em;
-        height: 100px;
+        width: 200px;
+        height: 150px;
       }
     }
   }
@@ -185,7 +141,6 @@
       padding: .5em 0;
     }
 
-    border-bottom: 1px solid #E9E9E9;
     padding: 5rem 0 5rem 0;
 
 

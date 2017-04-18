@@ -2,6 +2,7 @@
   <%= image_tag(item.image, class: "service__img") %>
 
   <h2><%= item.title %></h2>
+  <p><%= item.description %></p>
 
   <div class="service__button">
     <%= link_to 'Learn more', service_path(item), class:"button" %>

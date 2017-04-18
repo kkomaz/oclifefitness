@@ -1,12 +1,15 @@
 // Social Media footer
 .oc-footer {
   @include container;
-  border-top: 1px solid $gray;
   padding-top: 1em;
 
   &__social-media {
     @include span(full);
     text-align: center;
+
+    img {
+      width: 50px;
+    }
   }
 
   &__contact {
@@ -41,10 +44,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  img {
-    width: 50px;
   }
 
   a {

@@ -1,4 +1,9 @@
 <div>
+  <% if user_signed_in? %>
+  <div class="col-md-12">
+    <%= link_to "New Service", new_service_path, :class => 'button' %>
+  </div>
+  <% end %>
   <%= @services.each do |service| %>
     <h1><%= service.title %></h1>
     <h3><%= service.description %></h3>
