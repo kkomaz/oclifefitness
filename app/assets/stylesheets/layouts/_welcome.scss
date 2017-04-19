@@ -327,4 +327,63 @@
       }
     }
   }
+
+  .testimonials {
+    height: 350px;
+
+    @include phone {
+      height: inherit;
+      padding: 3rem 0;
+    }
+    @include position(relative);
+
+    background: $gray;
+    padding: 3rem 1em 7.5rem;
+
+    h2, h3, h4, p {
+      color: $black;
+    }
+
+    &__title {
+      text-align: center;
+      color: $red;
+      font-weight: $bold;
+      margin: 0 0 1em;
+    }
+
+    &__carousel-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__carousel {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+    }
+
+    &__client {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      img {
+        width: 200px;
+      }
+    }
+
+    &__full_name {
+      margin-left: 20px;
+    }
+
+    .carousel-inner {
+      height: inherit;
+    }
+
+    .carousel-indicators {
+      display: none;
+    }
+  }
 }
