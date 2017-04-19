@@ -13,11 +13,23 @@
   @include container;
 
   &__info {
+    @include phone {
+      display: block;
+      text-align: center;
+    }
+
     background-color: $true-black;
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
   }
+
+  &__contacts {
+    @include phone {
+      margin-bottom: 10px;
+    }
+  }
+
 
   &__secondary {
     @include phone {

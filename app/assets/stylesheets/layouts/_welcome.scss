@@ -13,6 +13,12 @@
     padding: 0 30px 30px 30px;
 
     &-inner {
+      @include phone {
+        display: flex;
+        justify-content: center;
+        height: inherit;
+      }
+
       height: 500px;
     }
 
@@ -25,13 +31,20 @@
     }
 
     &-image {
+      @include phone {
+        height: 250px;
+        width: 250px;
+      }
+
       display: flex;
       justify-content: center;
 
       img {
+        @include phone {
+          width: 100%;
+        }
         object-fit: cover;
         overflow: hidden;
-        max-height: 500px;
       }
     }
   }
